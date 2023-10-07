@@ -1,5 +1,4 @@
 import os
-import regex
 import re
 import sys
 import subprocess
@@ -10,6 +9,13 @@ except ImportError:
     print("tqdm not found! Installing tqdm...")
     subprocess.run([sys.executable, "-m", "pip", "install", "tqdm"])
     from tqdm import tqdm
+# Check if regex is installed, and if not, install it
+try:
+    import regex
+except ImportError:
+    print("regex not found! Installing regex...")
+    subprocess.run([sys.executable, "-m", "pip", "install", "regex"])
+    import regex
 
 # Python version 3.11.5
 # Code from ChatGPT
@@ -23,7 +29,7 @@ except ImportError:
 # Just input Folder paths, and the file extension
 
 # วิธีใช้บนคอม
-# เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
+# เพียงแค่ป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
 
 # How to use in moblie version
 # Please run in Pydroid 3 - IDE for Python 3
@@ -33,7 +39,7 @@ except ImportError:
 # วิธีใช้บนมือถือ
 # ให้รันบนPydroid 3 - IDE for Python 3
 # ถ้าเอาไฟล์ดิบที่ต้องการไว้ในโฟลเดอร์  Pyroid3 ตำแหน่งไฟล์คือ [/storage/emulated/0/Documents/Pydroid3/(ใส่ชื่อโฟลเดอร์ตรงนี้)]
-# เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
+# เพียงแค่ป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
 
 def to_raw_string(s):
     return s.encode('unicode_escape').decode()
@@ -80,7 +86,7 @@ How to use on PC
 Just input Folder paths, and the file extension
 
 วิธีใช้บนคอม
-เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
+เพียงแค่ป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
 
 How to use in moblie version
 Please run in Pydroid 3 - IDE for Python 3
@@ -90,7 +96,7 @@ If you put flie in Pyroid3 Folder the path is [/storage/emulated/0/Documents/Pyd
 วิธีใช้บนมือถือ
 ให้รันบนPydroid 3 - IDE for Python 3
 ถ้าเอาไฟล์ดิบที่ต้องการไว้ในโฟลเดอร์  Pyroid3 ตำแหน่งไฟล์คือ [/storage/emulated/0/Documents/Pydroid3/(ใส่ชื่อโฟลเดอร์ตรงนี้)]
-เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
+เพียงแค่ป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
 """)
     while True:
         folder_paths = []
