@@ -10,8 +10,11 @@ import regex
 # Made By Bank's : Thai translator H Game
 # Link Discord : https://discord.gg/q6FkGCHv66
 
-# โปรแกรมนี้ใช้เพื่อหาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์มากกว่า2ตัวขึ้นไป
-# This program is used to find any Thai characters that have more than 2 diacritics.
+# โหมด1ใช้เพื่อหาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์มากกว่า2ตัวขึ้นไป
+# Mode 1 is used to find any Thai characters that have more than 2 diacritics.
+
+# โหมด2ไว้ใช้หาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์ผิดแปลกไป
+# Mode 2 is used to find any Thai characters that have unusual tones.
 
 # How to use on PC
 # Just input Folder paths, and the file extension
@@ -94,8 +97,11 @@ Code from ChatGPT
 Made By Bank's : Thai translator H Game
 Link Discord : https://discord.gg/q6FkGCHv66
 
-โปรแกรมนี้ใช้เพื่อหาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์มากกว่า2ตัวขึ้นไป
-This program is used to find any Thai characters that have more than 2 diacritics.
+โหมด1ใช้เพื่อหาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์มากกว่า2ตัวขึ้นไป
+Mode 1 is used to find any Thai characters that have more than 2 diacritics.
+
+โหมด2ไว้ใช้หาตัวอักษรภาษาไทยใดที่มีวรรณยุกต์ผิดแปลกไป
+Mode 2 is used to find any Thai characters that have unusual tones.
  
 How to use on PC
 Just input Folder paths, and the file extension
