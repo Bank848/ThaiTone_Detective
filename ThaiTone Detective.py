@@ -20,7 +20,7 @@ except ImportError:
 # This program is used to find any Thai characters that have more than 2 diacritics.
 
 # How to use on PC
-# Just input Folder paths, the keyword you want to search, and the file extension
+# Just input Folder paths, and the file extension
 
 # วิธีใช้บนคอม
 # เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
@@ -77,7 +77,7 @@ Link Discord : https://discord.gg/q6FkGCHv66
 This program is used to find any Thai characters that have more than 2 diacritics.
  
 How to use on PC
-Just input Folder paths, the keyword you want to search, and the file extension
+Just input Folder paths, and the file extension
 
 วิธีใช้บนคอม
 เพียงป้อนตำแหน่งของโฟลเดอร์ และนามสกุลของไฟล์นั้น ๆ 
