@@ -1,6 +1,3 @@
-# ThaiTone_Detective
-This program is used to find any Thai characters that have more than 2 diacritics.
-
 # Python version 3.11.5
 # Code from ChatGPT
 # Made By Bank's : Thai translator H Game
