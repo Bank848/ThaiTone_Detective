@@ -2,8 +2,18 @@ import os
 import re
 import sys
 import subprocess
-from tqdm import tqdm
-import regex
+try:
+    from tqdm import tqdm
+except ImportError:
+    print("tqdm not found! Installing tqdm...")
+    subprocess.run([sys.executable, "-m", "pip", "install", "tqdm"])
+    from tqdm import tqdm
+try:
+    import regex
+except ImportError:
+    print("regex not found! Installing regex...")
+    subprocess.run([sys.executable, "-m", "pip", "install", "regex"])
+    import regex
 
 # Python version 3.11.5
 # Code from ChatGPT
@@ -191,7 +201,7 @@ If you put flie in Pyroid3 Folder the path is [/storage/emulated/0/Documents/Pyd
             elif action == "no":
                 sys.exit()  # Exit the entire program
             else:
-                print("Invalid option. Please choose 'yes', 'change mode', or 'no'.")
+                print("Invalid option. Please choose 'yes', 'no', 'change mode'")
 
 
 if __name__ == "__main__":
